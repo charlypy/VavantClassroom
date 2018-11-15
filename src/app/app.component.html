@@ -4,11 +4,9 @@
       [tabBarActiveTextColor]="'#1890ff'">
   <TabPane
     class="tab"
-    title="When?">
+    title="Where/When?">
     <div class="container-tabs">
-      <app-city-selector
-        (goToClassTimeSelectorPage)="goTo(TabIndex.timeSelector)"
-      ></app-city-selector>
+      <app-city-selector></app-city-selector>
     </div>
   </TabPane>
 
@@ -16,9 +14,7 @@
   <TabPane class="tab"
            title="Vacant Rooms">
     <div class="container-tabs">
-      <app-time-selector
-        (goToClassCitySelectorPage)="goTo(TabIndex.citySlector)"
-        (goToClassRoomSelectorPage)="goTo(TabIndex.roomSelector)"></app-time-selector>
+      <!--Here should be the result-->
     </div>
   </TabPane>
 

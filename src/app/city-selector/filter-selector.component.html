@@ -1,0 +1,21 @@
+<div class="selector">
+  <div>Choose your city :</div>
+    <List>
+      <CheckboxItem *ngFor="let i of data"
+                    [name]="i.label"
+                    [value]="i.value"
+                    [checked]="i.checked"
+                    (onChange)="onChange($event)">
+        {{i.label}}
+      </CheckboxItem>
+    </List>
+  <WhiteSpace size='md'></WhiteSpace>
+  <div>Choose your time :</div>
+
+
+</div>
+
+
+
+
+

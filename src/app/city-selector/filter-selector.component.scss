@@ -1,13 +1,12 @@
-.checkbox {
-  display: flex;
-  justify-content: space-around;
-  width: 50vw;
-}
-
 .selector {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 25vh;
+  ::ng-deep .am-list-body {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+  }
 }

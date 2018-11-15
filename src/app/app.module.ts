@@ -13,8 +13,7 @@ import {
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {CitySelectorComponent} from './city-selector/city-selector.component';
-import {TimeSelectorComponent} from './time-selector/time-selector.component';
+import {FilterSelectorComponent} from './city-selector/filter-selector.component';
 import {HttpClientModule} from '@angular/common/http';
 import {registerLocaleData} from '@angular/common';
 import fr from '@angular/common/locales/fr';
@@ -25,8 +24,7 @@ registerLocaleData(fr);
 @NgModule({
   declarations: [
     AppComponent,
-    CitySelectorComponent,
-    TimeSelectorComponent
+    FilterSelectorComponent
   ],
   imports: [
     BrowserModule,
