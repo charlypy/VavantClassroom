@@ -1,19 +1,25 @@
 <div class="background"></div>
-<mat-tab-group [selectedIndex]="currentTabIndex | async" class="container">
-  <mat-tab>
-    <mat-card class="container-tab">
+
+<Tabs [page]="2"
+      [tabBarActiveTextColor]="'#1890ff'">
+  <TabPane
+    class="tab"
+    title="When?">
+    <div class="container-tabs">
       <app-city-selector
         (goToClassTimeSelectorPage)="goTo(TabIndex.timeSelector)"
       ></app-city-selector>
-    </mat-card>
-  </mat-tab>
-  <mat-tab>
-    <mat-card class="container-tab">
+    </div>
+  </TabPane>
+
+
+  <TabPane class="tab"
+           title="Vacant Rooms">
+    <div class="container-tabs">
       <app-time-selector
         (goToClassCitySelectorPage)="goTo(TabIndex.citySlector)"
         (goToClassRoomSelectorPage)="goTo(TabIndex.roomSelector)"></app-time-selector>
-    </mat-card>
-  </mat-tab>
-  <mat-tab class="vacant-room"> Content 3</mat-tab>
-</mat-tab-group>
+    </div>
+  </TabPane>
 
+</Tabs>

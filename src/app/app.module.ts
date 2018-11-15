@@ -15,10 +15,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CitySelectorComponent} from './city-selector/city-selector.component';
 import {TimeSelectorComponent} from './time-selector/time-selector.component';
-import {NgZorroAntdModule, NZ_I18N, fr_FR} from 'ng-zorro-antd';
-import { HttpClientModule } from '@angular/common/http';
-import { registerLocaleData } from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
+import {registerLocaleData} from '@angular/common';
 import fr from '@angular/common/locales/fr';
+import {NgZorroAntdMobileModule} from 'ng-zorro-antd-mobile';
 
 registerLocaleData(fr);
 
@@ -39,11 +39,11 @@ registerLocaleData(fr);
     MatButtonModule,
     BrowserAnimationsModule,
     FormsModule,
-    NgZorroAntdModule,
+    NgZorroAntdMobileModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ { provide: LOCALE_ID, useValue: 'fr' }, { provide: NZ_I18N, useValue: fr_FR } ],
+  providers: [{provide: LOCALE_ID, useValue: 'fr'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

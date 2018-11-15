@@ -12,8 +12,10 @@ export class CitySelectorComponent {
   public isCityButtonDisplayed = false;
   public currentCitySelector = new CitiesSelected();
 
-  @Output()
-  public goToClassTimeSelectorPage = new EventEmitter();
+  public data = [
+    { value: 0, label: 'Paris' },
+    { value: 1, label: 'Lille' },
+  ];
 
   constructor(private fb: FormBuilder) {
     this.currentCitySelector.Lille = false;
@@ -33,10 +35,10 @@ export class CitySelectorComponent {
 
   }
 
-  public validateCity() {
-    if (this.isCityButtonDisplayed) {
-      this.goToClassTimeSelectorPage.emit();
-    }
+
+
+  onChange = (val: any) => {
+    console.log(val);
   }
 
 }

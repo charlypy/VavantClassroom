@@ -1,7 +1,6 @@
 <div [formGroup]="timeSelector" class="selector">
   <div>Choose your time :</div>
   <div class="checkbox">
-    <nz-date-picker formControlName="date" (ngModelChange)="onChange($event)" nzShowTime></nz-date-picker>
   </div>
   <button [disabled]="!isTimeButtonDisplayed" (click)="validateTime()" class="blue" mat-button>Continue</button>
 </div>
