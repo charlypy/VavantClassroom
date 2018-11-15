@@ -1,0 +1,26 @@
+.background {
+  background: url("../assets/background2.jpg") no-repeat center center;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  .container-tab {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+  }
+  ::ng-deep .mat-tab-label-container {
+    display: none;
+  }
+
+  ::ng-deep mat-tab-header {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~open-iconic/font/css/open-iconic-bootstrap.css';
+
+button {
+  width: 25vw;
+  height: 7vh;
+}
+
+button.blue[disabled] {
+  color: #9c9c9c;
+  background-color: #dcdcdc;
+  cursor: auto;
+  border: none;
+}
+
+button.simple-border {
+  border: 1px solid #040037;
+  background-color: white;
+  max-width: inherit;
+}
+
+button.blue {
+  color: white;
+  background-color: #040037;
+  border: 0;
+
+  i {
+    color: white;
+  }
+
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  height: 25vh;
+}

@@ -1,0 +1,13 @@
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+}
+
+nz-date-picker, nz-month-picker, nz-year-picker, nz-range-picker, nz-week-picker {
+  margin: 0 8px 12px 0;
+}
